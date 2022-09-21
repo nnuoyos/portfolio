@@ -18,7 +18,7 @@ body{
     position: relative;
     width: 85%;
     margin: 0 auto;
-    background-color: #5bd2ec;
+    background-color: #5fb6ca;
 }
 .profile_img{
     width: 80%;
@@ -28,6 +28,7 @@ body{
     position: absolute;
     content: '';
     width: 100%;
+    height: 2px;
     background-color: #eeeeee;
 }
 #tech_section .tech_bar ul li::after{
