@@ -4,27 +4,62 @@ body{
     position: relative;
     width: 100%;
 }
-.main_title{
+/* toggle button */
+.side_toggle_button{
     position: fixed;
-    min-width: 320px;
-    width: 375px;
-    height: 44px;
-    background-color: #fff;
-    z-index: 10;
-    top: 0;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: violet;
+    z-index: 1;
+    bottom: 15px;
+    right: 15px;
 }
-.main_title h1{
+.toggle_menu{
+    position: fixed;
+    z-index: 1;
+    bottom: 80px;
+    right: 15px;
+}
+.toggle_menu li{
+    width: 60px;
+    height: 60px;
+    margin-bottom: 10px;
+    border-radius: 50%;
+    background-color: rgb(236, 201, 236);
+    text-align: center;
+    margin-top: 10px;
+}
+.toggle_menu_icon{
+    position: relative;
+    top: 15px;
+}
+.toggle_menu_text{
+    position: relative;
+    bottom: 10px;
+}
+/* icon */
+.fa-bars{
     position: absolute;
-    justify-content: center;
-    align-items: center;
-
+    left: 17px;
+    top: 16px;
+}
+.fa-user,.fa-keyboard{
+    font-size: 27px;
+}
+.fa-folder-open{
+    font-size: 27px;
+    margin-left: 4px;
 }
 .container{
     position: relative;
     width: 90%;
     margin: 0 auto;
-    margin-top: 90px;
+    margin-top: 20px;
     /* background-color: #5fb6ca; */
+}
+.header_navbar{
+    display: none;
 }
 /* about section */
 #about_section{
@@ -114,12 +149,44 @@ body{
 /* 태블릿 아이패드 air */
 @media all and (min-width: 768px) {
     body{
+        width: 100%;
         background-color: orange;
+    }
+    .side_toggle_button{
+        display: none;
+    }
+    .toggle_menu{
+        display: none;
+    }
+    .header_navbar{
+        display: block;
+        position: fixed;
+        width: 100%;
+        height: 50px;
+        top: 0;
+        background-color: cornflowerblue;
+        z-index: 5;
+    }
+    .header_navbar ul{
+        display: flex;
+        margin: 0 auto;
+        align-items: center;
+        justify-content: center;
+    }
+    .header_navbar ul li{
+        /* float: left; */
+        margin-right: 20px;
     }
 }
 /* 데스크탑 */
 @media all and (min-width: 960px) {
     body {
         background-color: darkkhaki;
+    }
+    .side_toggle_button{
+        display: none;
+    }
+    .toggle_menu{
+        display: none;
     }
 }
