@@ -30,6 +30,9 @@ body{
     text-align: center;
     margin-top: 10px;
 }
+.toggle_menu_list{
+    display: none;
+}
 .toggle_menu_icon{
     position: relative;
     top: 15px;
@@ -38,6 +41,14 @@ body{
     position: relative;
     bottom: 10px;
 }
+/* toggle button active */
+.toggle_menu_list.active{
+    display: block;
+}
+.toggle_menu_list li a:active{
+    color: #fff;
+}
+
 /* icon */
 .fa-bars{
     position: absolute;
@@ -88,8 +99,8 @@ body{
 /* tech section */
 #tech_section{
     position: relative;
-    top: 50px;
-    margin-bottom: 30px;
+    top: 70px;
+    margin-bottom: 50px;
 }
 .tech_bar{
     margin-bottom: 50px;
@@ -119,6 +130,10 @@ body{
 .coding_bar{
     padding: 0;
 }
+.code_card{
+    /* border: none; */
+}
+
 .coding_bar li{
     margin-bottom: 10px;
 }
@@ -139,10 +154,14 @@ body{
     margin-top: 18px;
     background-color: rgb(27, 80, 228);
 }
+/* code skill icon */
+.fa-python{
+    font-size: 50px;
+}
 /* works section */
 #works_section{
     position: relative;
-    top: 50px;
+    top: 70px;
 }
 
 
@@ -164,7 +183,7 @@ body{
         width: 100%;
         height: 50px;
         top: 0;
-        background-color: cornflowerblue;
+        /* background-color: cornflowerblue; */
         z-index: 5;
     }
     .header_navbar ul{
