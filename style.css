@@ -1,37 +1,50 @@
 @charset "utf-8";
+
 /* 모바일 아이폰 기준 */
 body{
     position: relative;
     width: 100%;
 }
+/* main */
+#main{
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+    /* background-color: #5fb6ca; */
+}
+#nav_bar{
+    position: relative;
+    width: 100%;
+}
+.navbar_box{
+    display: none;
+}
 /* toggle button */
 .side_toggle_button{
     position: fixed;
-    width: 60px;
-    height: 60px;
+    width: 50px;
+    height: 50px;
     border-radius: 50%;
     background-color: violet;
-    z-index: 1;
+    z-index: 5;
     bottom: 15px;
     right: 15px;
 }
 .toggle_menu{
     position: fixed;
+    display: none;
     z-index: 1;
     bottom: 80px;
     right: 15px;
 }
 .toggle_menu li{
-    width: 60px;
-    height: 60px;
+    width: 50px;
+    height: 50px;
     margin-bottom: 10px;
     border-radius: 50%;
     background-color: rgb(236, 201, 236);
     text-align: center;
     margin-top: 10px;
-}
-.toggle_menu_list{
-    display: none;
 }
 .toggle_menu_icon{
     position: relative;
@@ -42,65 +55,110 @@ body{
     bottom: 10px;
 }
 /* toggle button active */
-.toggle_menu_list.active{
+.toggle_menu_list{
     display: block;
+    transition: all ease-in 0.2s;
 }
 .toggle_menu_list li a:active{
     color: #fff;
 }
-
+.toggle_menu_list li a:hover{
+    color: rgb(255, 255, 255);
+}
 /* icon */
 .fa-bars{
     position: absolute;
-    left: 17px;
-    top: 16px;
+    font-size: 22px;
+    left: 15px;
+    top: 15px;
 }
-.fa-user,.fa-keyboard{
-    font-size: 27px;
+.fa-house,.fa-user,.fa-keyboard,.fa-at{
+    font-size: 22px;
 }
 .fa-folder-open{
-    font-size: 27px;
+    font-size: 22px;
     margin-left: 4px;
 }
-.container{
+/* home */
+#home_section{
     position: relative;
-    width: 90%;
+    width: 100%;
+    height: 560px;
+    text-align: center;
     margin: 0 auto;
-    margin-top: 20px;
-    /* background-color: #5fb6ca; */
 }
-.header_navbar{
-    display: none;
+.home_title_box{
+    position: relative;
 }
+.home_front_end{
+    position: absolute;
+    top: 249px;
+    font-size: 25px;
+    text-align: left;
+}
+.home_portfolio_top{
+    position: absolute;
+    top: 150px;
+    font-size: 55px;
+    font-weight: 700;
+}
+.home_portfolio_bottom{
+    position: absolute;
+    top: 350px;
+    font-size: 55px;
+    font-weight: 700;
+}
+
 /* about section */
 #about_section{
+    position: relative;
     width: 100%;
+    height: 500px;
+    margin-top: 30px;
+    border-radius: 10px;
     background-color:thistle;
 }
-#about_section h2{
+.about_title{
     text-align: center;
     margin-bottom: 10px;
+    font-size: 29px;
+    letter-spacing: 0px;
+    font-weight: 300;
 }
-.about_text{
-    width: 85%;
-    padding: 10px;
-    border-radius: 10px;
-    margin: 0 auto;
-    background-color: #fff;
+.about_container{
+    position: relative;
+    width: 80%;
+    height: auto;
+    display: flex;
+    left: 50%;
+    top: 42%;
+    transform: translate(-50%,-50%);
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #000;
 }
 .profile_img{
-    width: 80%;
-    margin-top: 10%;
-    margin-bottom: 10%;
-    margin-left: 10%;
+    position: relative;
+    width: 56%;
+    height: 37vh;
+    z-index: 2;
+    background-image: url(./img/memoji_png.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    text-indent: -9999px;
     border-radius: 50%;
-    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
 /* tech section */
 #tech_section{
     position: relative;
-    top: 70px;
-    margin-bottom: 50px;
+    width: 100%;
+    margin-top: 30px;
+    background-color: #efefef;
+}
+.tech_container{
+    margin: 0 auto;
+    width: 90%;
 }
 .tech_bar{
     margin-bottom: 50px;
@@ -130,10 +188,6 @@ body{
 .coding_bar{
     padding: 0;
 }
-.code_card{
-    /* border: none; */
-}
-
 .coding_bar li{
     margin-bottom: 10px;
 }
@@ -160,8 +214,19 @@ body{
 }
 /* works section */
 #works_section{
-    position: relative;
+    /* position: relative;
+    width: 100%;
     top: 70px;
+    background-color: #efefef; */
+
+    position: relative;
+    width: 100%;
+    margin-top: 30px;
+    background-color: #efefef;
+}
+.works_container{
+    width: 90%;
+    margin: 0 auto;
 }
 
 
@@ -169,33 +234,96 @@ body{
 @media all and (min-width: 768px) {
     body{
         width: 100%;
-        background-color: orange;
     }
+    /* home section */
+    #home_section{
+       background-color: antiquewhite;
+    }
+    .home_front_end{
+        position: absolute;
+        top: 200px;
+        font-size: 25px;
+        text-align: left;
+    }
+    .home_portfolio_top{
+        position: absolute;
+        top: 20px;
+        font-size: 115px;
+        font-weight: 700;
+    }
+    .home_portfolio_bottom{
+        position: absolute;
+        top: 350px;
+        font-size: 115px;
+        font-weight: 700;
+    }
+     /* about section */
+     #about_section{
+        position: relative;
+        width: 90%;
+        margin: 0 auto;
+        margin-top: 30px;
+    }
+    .profile_img{
+        position: relative;
+        width: 100%;
+        height: 49vh;
+        z-index: 2;
+        top: -21px;
+        left: -27px;
+        border-radius: 50%;
+    }
+    .about_title {
+        text-align: center;
+        margin-bottom: 10px;
+        font-size: 50px;
+        letter-spacing: 0;
+        font-weight: 300;
+    }
+    .about_container {
+        position: relative;
+        width: 90%;
+        height: 65%;
+        display: flex;
+        top: 192px;
+        flex-wrap: nowrap;
+        align-items: center;
+        justify-content: space-between;  
+    }
+    .about_text{
+        width: 100%;
+     }
+   
+    /* toggle_display none */
     .side_toggle_button{
         display: none;
     }
-    .toggle_menu{
+    .toggle_menu_list{
         display: none;
     }
-    .header_navbar{
-        display: block;
+    /* nav bar */
+    .navbar_box{
+        width: 58px;
         position: fixed;
-        width: 100%;
-        height: 50px;
-        top: 0;
-        /* background-color: cornflowerblue; */
-        z-index: 5;
+        top: 10%;
+        right: 11px;
+        display: flex;
+        z-index: 10;
+        transition: .6s;
     }
-    .header_navbar ul{
+    .navbar_box ul{
         display: flex;
         margin: 0 auto;
+        margin-bottom: 50px;
         align-items: center;
         justify-content: center;
+        writing-mode: vertical-lr;
     }
-    .header_navbar ul li{
-        /* float: left; */
-        margin-right: 20px;
+    .navbar_box ul li{
+        margin-bottom: 30px;
+        font-size: 20px;
     }
+   
 }
 /* 데스크탑 */
 @media all and (min-width: 960px) {
