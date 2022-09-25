@@ -1,6 +1,5 @@
-
+/* home section text */
 const container = document.querySelector(".home_container");
-
 document.body.addEventListener("mousemove", e => {
   const x = e.clientX;
   const y = e.clientY - 35;
