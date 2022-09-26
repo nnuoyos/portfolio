@@ -7,6 +7,7 @@
     <script src="http://code.jquery.com/jquery-latest.js"></script>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Inria+Sans:wght@300;400;700&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/fa4474c805.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./style.css">
@@ -78,44 +79,44 @@
     </section>
     <!-- #home_section end-->
     <section id="about_section" class="col-md-7">
-      <div class="profile_box">
         <h2 id="title" class="about_title">ABOUT ME</h2>
+      <div class="about_container">
+        <div class="profile_img_container">
+          <p class="memoji">이미지</p>
+        </div>
+        <div class="about_text">
+          <strong>
+            <h2>안녕하세요</h2>
+            <p>언제나 도전할 준비가 되어 있는<br>신입 프론트엔드 개발자<br>장소영 입니다</p>
+          </strong>
+          <p>끊임 없이 변화하는 세상 속에서 항상 새로운 것을 받아 들일 준비가 되어 있습니다. 
+            언제든지 기획자와 사용자가 될 수 있는 입장으로서 서로의 위치에서 사용하기 편리한 서비스를 최우선으로 생각 합니다.
+          </p>
+        </div>
       </div>
-      <div>
-        <ul class="about_container">
-          <li class="profile_img_container">
-          <div>
-            <p class="memoji">이미지</p>
-          </div>
+    </section>
+    <section id=career_section>
+      <div class="about_career">
+        <h3 id="title">What I Do</h3>
+        <ul class="career_list">
+          <li>
+            <h3>Education</h3>
+            <strong>2022</strong>
+            <p>SBS 아카데미컴퓨터아트학원 <br>프론트엔드 개발자 과정</p>
+            <strong>2012-2015</strong>
+            <p>bunka fashion college</p>
           </li>
           <li>
-            <div class="about_intro">
-              <strong>
-                <h2>안녕하세요</h2>
-                <P>항상 도전할 준비가 되어있는 <br>신입프론트엔드 개발자 <br> 장소영 입니다</P>
-              </strong>
-              <p>끊임 없이 변화하는 세상 속에서 항상 새로운 것을 받아 들일 준비가 되어 있습니다. 
-                언제든지 기획자와 사용자가 될 수 있는 입장으로서 서로의 위치에서 사용하기 편리한 서비스를 최우선으로 생각 합니다.
-              </p>
-            </div>
+            <h3>Experience</h3>  
+            <strong>2019-2021</strong>
+            <p>ZARA RETAIL KOREA</p>
+            <strong>2017-2018</strong>
+            <p>thorough brace Corporation</p>
+            <strong>2015-2017</strong>
+            <p>TAKEYA Corporation</p>
           </li>
         </ul>
       </div>
-      <!-- <div class="about_career">
-        <ul>
-          <li>
-            <h3>EDUCATION</h3>
-            <p>2022 sbs computer academy <br> 프론트엔드 개발자 과정 수료</p>
-            <p>2012-2015 bunka fashion college</p>
-          </li>
-          <li>
-            <h3>EXPREIENCE</h3>
-            <p>2019-2021 ZARA RETAIL KOREA</p>
-            <p>2017-2018 THOROUGH BRACE Corporation</p>
-            <p>2015-2017 TAKEYA Corporation</p>
-          </li>
-        </ul>
-      </div> -->
     </section>
     <!-- #about_section end-->
     <section id="tech_section" data-aos="fade-right">
@@ -147,35 +148,29 @@
               <li class="percentage">70%</li>
             </div>
           </ul>
-          <h3 id="title">Programming language</h3>
-          <div class="coding_skill_bar" data-aos="fade-up"
-          data-aos-duration="3000">
-            <div class="row row-cols-1 row-cols-md-3 g-4">
-              <div class="col">
-                <div class="card h-100 code_card">
-                  <i class="fa-brands fa-python"></i>
-                  <div class="card-body">
-                    <h5 class="card-title">python</h5>
-                  </div>
-                </div>
-              </div>
-              <div class="col">
-                <div class="card h-100 code_card">
-                  <i class="fa-brands fa-java"></i>
-                  <div class="card-body">
-                    <h5 class="card-title">java</h5>
-                  </div>
-                </div>
-              </div>
-              <div class="col">
-                <div class="card h-100 code_card">
-                  <i class="fa-solid fa-c"></i>
-                  <div class="card-body">
-                    <h5 class="card-title">C/C++</h5>
-                  </div>
-                </div>
-              </div>
-            </div>
+          <!-- <h3 id="title">more</h3> -->
+          <div class="more_skills">
+            <ul>
+              <h4>sub skills</h4>
+              <li>Python</li>
+              <li>Java</li>
+              <li>C/C++</li>
+            </ul>
+            <ul>
+              <h4>tools</h4>
+              <li>visual studio code</li>
+              <li>visual studio</li>
+              <li>eclipse</li>
+              <li>git</li>
+              <li>photoshop</li>
+              <li>illustrator</li>
+              <li>pigma</li>
+            </ul>
+            <ul class="languages_list">
+              <h4>Languages</h4>
+              <li><span>korean</span><br><p class="languages_sub_text">native language</p></li>
+              <li><span>japanese</span><br><p class="languages_sub_text">fluent</p></li>
+            </ul>
           </div>
       </div>
     </section>
@@ -186,9 +181,9 @@
         <div id="works_card" class="row row-cols-1 row-cols-md-2 g-4">
           <div class="col">
             <div class="card">
-              <img src="./img/thek-ipad.png" class="card-img-top" alt="...">
+              <img src="./img/mockup_sample.png" class="card-img-top" alt="...">
               <div class="card-body">
-                <h5 class="card-title">Card title</h5>
+                <h5 class="card-title">작업물1</h5>
                 <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
                 <a href="#" class="btn btn-primary">Go site</a>
               </div>
@@ -196,9 +191,9 @@
           </div>
           <div class="col">
             <div class="card">
-              <img src="./img/thek-mobile.png" class="card-img-top" alt="...">
+              <img src="./img/mockup_sample.png" class="card-img-top" alt="...">
               <div class="card-body">
-                <h5 class="card-title">Card title</h5>
+                <h5 class="card-title">작업물2</h5>
                 <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
                 <a href="#" class="btn btn-primary">Go site</a>
               </div>
@@ -206,9 +201,9 @@
           </div>
           <div class="col">
             <div class="card">
-              <img src="..." class="card-img-top" alt="...">
+              <img src="./img/mockup_sample.png" class="card-img-top" alt="...">
               <div class="card-body">
-                <h5 class="card-title">Card title</h5>
+                <h5 class="card-title">작업물3</h5>
                 <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
                 <a href="#" class="btn btn-primary">Go site</a>
               </div>
@@ -216,9 +211,19 @@
           </div>
           <div class="col">
             <div class="card">
-              <img src="..." class="card-img-top" alt="...">
+              <img src="./img/mockup_sample.png" class="card-img-top" alt="...">
               <div class="card-body">
-                <h5 class="card-title">Card title</h5>
+                <h5 class="card-title">작업물4</h5>
+                <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
+                <a href="#" class="btn btn-primary">Go site</a>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <img src="./img/mockup_sample.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">작업물5</h5>
                 <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
                 <a href="#" class="btn btn-primary">Go site</a>
               </div>
@@ -233,12 +238,14 @@
   <!-- main end -->
   <footer>
     <section id="contact_section">
-      <div class="contact_container">
-        <h3 id="title">contact</h3>
-        <h3>e-mail youngadult3104@gmail.com</h3>
-        <h3>gitHub https://github.com/nnuoyos</h3>
-        <h3>Copyright 2022. Soyoung Jang All rights reserved.</h3>
-      </div>
+      <address class="contact_container">
+        <h3 id="title" class="contact_title">contact</h3>
+        <div>
+          <p>e-mail youngadult3104@gmail.com</p>
+          <p>gitHub https://github.com/nnuoyos</p>
+          <p>Copyright 2022. Soyoung Jang All rights reserved.</p>
+        </div>
+      </address>
     </section>
   </footer>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js"></script>
@@ -251,7 +258,6 @@
         easing: 'ease-out-back',
         duration: 1000
     });
- 
-</script>
+  </script>
 </body>
 </html>
