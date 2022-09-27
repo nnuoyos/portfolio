@@ -37,7 +37,6 @@ $(function (){
 
 
 /* tech skill progress */
-
 const bar1 = document.querySelector("#html_bar .progress");
 const bar2 = document.querySelector("#css_bar .progress"); 
 const bar3 = document.querySelector("#js_bar .progress"); 
@@ -85,4 +84,12 @@ const bar6Animation = setInterval(() => {
   t++ >= btTotal && clearInterval(bar6Animation)
 }, 30)
 
-
+/* pop up */
+function ready(){
+  if(!confirm("본 사이트는 상업적 목적이 아닌 개인 포트폴리오 용도로 제작 되었습니다. 홈페이지 일부 내용과 기타 이미지 등은 출처가 있음을 밝힙니다.")){
+    window.close();
+  }else{
+    alert("신입 프론트엔드 개발자 장소영의 포트폴리오를 보러와 주셔서 감사합니다!");
+  }
+}
+document.addEventListener('DOMContentLoaded',ready); //DOMContentLoaded : q스택에서 렌더가 다 되고 페이지 뜨기 직전의 타이밍에 ready함수 실행

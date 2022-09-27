@@ -32,7 +32,6 @@ body{
     position: relative;
     width: 100%;
     margin: 0 auto;
-    /* background-color: #5fb6ca; */
 }
 #nav_bar{
     position: relative;
@@ -218,6 +217,7 @@ body{
     width: 100%;
     height: auto;
     margin-bottom: 50px;
+    margin-top: 30px;
     font-family: 'Montserrat', sans-serif;
 }
 .about_career{
@@ -301,9 +301,20 @@ body{
     margin: 0 auto;
 }
 /* footer */
+#footer {
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+}
 .contact_container{
+    height: 24vh;
     text-align: center;
     font-family: 'Montserrat', sans-serif;
+}
+#footer button{
+    position: relative;
+    border: 1px solid #000;
+    z-index: 10;
 }
 /* 태블릿 아이패드 air */
 @media all and (min-width: 768px) {
@@ -320,7 +331,7 @@ body{
         background-color: #eeae4d;
         opacity: 60%;
         transform: translate(-50%, -50%);
-        z-index: 9;
+        z-index: 1;
     }
     /* toggle_display none */
     .side_toggle_button{
@@ -383,7 +394,7 @@ body{
         font-weight: 700;
     }
      /* about section */
-     #about_section{
+    #about_section{
         position: relative;
         width: 90%;
         height: 450px;
@@ -468,7 +479,11 @@ body{
     .more_skills ul, .more_skills li{
         padding-left: 0;
     }
-}
+    .contact_container {
+        height: 33vh;
+        text-align: center;
+        font-family: 'Montserrat', sans-serif;
+}   }
 /* 데스크탑 */
 @media all and (min-width: 960px) {
     body{
@@ -512,5 +527,10 @@ body{
     .works_container {
         width: 70%;
         margin: 0px auto;
+    }
+    .contact_container {
+        height: 17vh;
+        text-align: center;
+        font-family: 'Montserrat', sans-serif;
     }
 }
