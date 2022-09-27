@@ -27,7 +27,6 @@ body{
     transform: translate(-50%, -50%);
     z-index: 1;
 }
-
 /* main */
 #main{
     position: relative;
@@ -124,18 +123,18 @@ body{
     height: 70px;
     overflow: hidden;
     outline: 1px transparent;
-  }
-  #home_section ul {
+}
+#home_section ul {
     position: absolute;
     top: 0;
     left: 0;
     list-style: none;
     white-space: nowrap;
-  }
-  .home_menu {
+}
+.home_menu {
     color: transparent;
     -webkit-text-stroke: 1px black;
-  }
+}
 .home_title_box{
     position: relative;
 }
@@ -157,7 +156,6 @@ body{
     font-size: 55px;
     font-weight: 700;
 }
-
 /* about section */
 #about_section{
     position: relative;
@@ -165,7 +163,6 @@ body{
     height: 600px;
     margin-top: 30px;
     border-radius: 10px;
-    /* background-color:thistle; */
 }
 .about_container{
     position: relative;
@@ -178,7 +175,6 @@ body{
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-   /*  border: 1px solid #000; */
 }
 .about_title{
     text-align: center;
@@ -212,19 +208,16 @@ body{
     text-align: center;
     margin-top: -50px;
     padding: 20px;
- }
- .about_career ul{
-     padding-left: 0;
-    }
-
+}
+.about_career ul{
+    padding-left: 0;
+}
 /* career_section */
 #career_section{
     position: relative;
     width: 100%;
     height: auto;
-   /*  margin-top: 30px; */
     margin-bottom: 50px;
-    /* background-color: #efefef; */
     font-family: 'Montserrat', sans-serif;
 }
 .about_career{
@@ -241,7 +234,6 @@ body{
 }
 .career_list h3{
     background-color: #cee5fc;
-    /* border: 1px solid #000; */
 }
 /* tech section */
 #tech_section{
@@ -311,6 +303,7 @@ body{
 /* footer */
 .contact_container{
     text-align: center;
+    font-family: 'Montserrat', sans-serif;
 }
 /* 태블릿 아이패드 air */
 @media all and (min-width: 768px) {
@@ -363,13 +356,13 @@ body{
         position: relative;
         width: 100%;
         height: 560px;
-        text-align: left;
         margin: 0 auto;
+        overflow: hidden;
         font-family: "Monument";
         font-size: 90px;
-        background: #70b8ff;
+        text-align: left;
         line-height: 70px;
-        overflow: hidden;
+        background: #70b8ff;
     }
     .home_front_end{
         position: absolute;
@@ -443,7 +436,6 @@ body{
     .career_list{
         display: flex;
         justify-content: space-around;
-        /* background-color: #1D976C; */
     }
     /* more skills */
     .more_skills{
@@ -476,7 +468,6 @@ body{
     .more_skills ul, .more_skills li{
         padding-left: 0;
     }
-   
 }
 /* 데스크탑 */
 @media all and (min-width: 960px) {
