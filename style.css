@@ -15,18 +15,6 @@ body{
     width: 100%;
     font-family: 'Inria Sans', sans-serif;
 }
-.circle {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 20px;
-    height: 20px;
-    border-radius: 50%;
-    background-color: #7acf6f;
-    opacity: 60%;
-    transform: translate(-50%, -50%);
-    z-index: 1;
-}
 /* main */
 #main{
     position: relative;
@@ -192,14 +180,14 @@ body{
     text-indent: -9999px;
     border-radius: 50%;
 }
-.profile_background{
+/* .profile_background{
     position: absolute;
     width: 190px;
     height: 190px;
     top: 50px;
     border-radius: 50%;
     background-color: #efefef;
-}
+} */
 .about_text{
     position: relative;
     width: 100%;
@@ -207,6 +195,20 @@ body{
     text-align: center;
     margin-top: -50px;
     padding: 20px;
+}
+.about_hello_title{
+    font-size: 50px;
+    font-weight: 800;
+    margin-bottom: 30px;
+}
+.about_sub_title{
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 2em;
+}
+.about_contents_text{
+    font-size: 16px;
+    line-height: 1.8em;
 }
 .about_career ul{
     padding-left: 0;
@@ -311,27 +313,40 @@ body{
     text-align: center;
     font-family: 'Montserrat', sans-serif;
 }
-#footer button{
-    position: relative;
-    border: 1px solid #000;
-    z-index: 10;
+.button_container{
+    margin: 0 auto;
+    margin-bottom: 10px;
+    text-align: center;
+    display: inline-grid;
 }
+.button_url{
+    width: 100px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff;
+    cursor: pointer;
+    margin: 6px;
+    padding: 10px;
+    text-align:center;
+    border: none;
+    background-size: 300% 100%;
+    border-radius: 50px;
+    background-image: linear-gradient(to right, #25aae1, #4481eb, #04befe, #3f86ed);
+    box-shadow: 0 4px 15px 0 rgba(65, 132, 234, 0.75);
+}
+.button_url:hover{
+    background-position: 100% 0;
+    transition: all .4s ease-in-out;
+}
+.button_url:focus{
+    outline: none;
+}
+
+
 /* 태블릿 아이패드 air */
 @media all and (min-width: 768px) {
     body{
         width: 100%;
-    }
-    .circle {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 25px;
-        height: 25px;
-        border-radius: 50%;
-        background-color: #eeae4d;
-        opacity: 60%;
-        transform: translate(-50%, -50%);
-        z-index: 1;
     }
     /* toggle_display none */
     .side_toggle_button{
@@ -403,7 +418,7 @@ body{
     }
     .about_container {
         position: relative;
-        width: 90%;
+        width: 100%;
         height: 65%;
         display: flex;
         top: 36%;
@@ -419,11 +434,11 @@ body{
     }
     .profile_img_container{
         position: relative;
-        width: 100%;
-        height: 38vh;
+        width: 77%;
+        height: 31vh;
         z-index: 5;
         top: -3px;
-        left: 15px;
+        left: 0px;
         border-radius: 50%;
     }
     .profile_background{
@@ -479,11 +494,20 @@ body{
     .more_skills ul, .more_skills li{
         padding-left: 0;
     }
+    /* footer */
     .contact_container {
-        height: 33vh;
+        height: 35vh;
         text-align: center;
         font-family: 'Montserrat', sans-serif;
-}   }
+    }   
+    .button_container{
+        margin: 0 auto;
+        margin-bottom: 10px;
+        text-align: center;
+        display: block;
+    }
+}
+
 /* 데스크탑 */
 @media all and (min-width: 960px) {
     body{

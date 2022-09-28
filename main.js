@@ -12,13 +12,13 @@ document.body.addEventListener("mousemove", e => {
 });
 
 /* mouse point*/
-const circle = document.querySelector('.circle');
+/* const circle = document.querySelector('.circle');
 document.addEventListener("mousemove", (e)=>{
     const mouseX = e.pageX;
     const mouseY = e.pageY;
     circle.style.left= mouseX + "px";
     circle.style.top = mouseY + "px";
-});
+}); */
 
 /* mobile - side toggle button */
 $('.side_toggle_button').click(function(event){
