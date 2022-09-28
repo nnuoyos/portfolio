@@ -10,6 +10,9 @@ html{
 #title, .navbar_box{
     font-family: "Monument";
 }
+.scroll_progress, .scroll_progress p{
+    display: none;
+}
 body{
     position: relative;
     width: 100%;
@@ -36,7 +39,7 @@ body{
     border-radius: 50%;
     background-color: #4da6ee;
     z-index: 5;
-    bottom: 15px;
+    bottom:5px;
     right: 15px;
 }
 .side_toggle_button:hover{
@@ -46,7 +49,7 @@ body{
     position: fixed;
     display: none;
     z-index: 1;
-    bottom: 80px;
+    bottom: 0px;
     right: 15px;
 }
 .toggle_menu li{
@@ -147,7 +150,7 @@ body{
 #about_section{
     position: relative;
     width: 100%;
-    height: 600px;
+    height: 800px;
     margin-top: 30px;
     border-radius: 10px;
 }
@@ -167,12 +170,13 @@ body{
     text-align: center;
     font-size: 29px;
     letter-spacing: 0px;
+    margin-bottom: 50px;
     font-weight: 300;
 }
 .profile_img_container{
     position: relative;
     width: 62%;
-    height: 44vh;
+    height: 53vh;
     z-index: 2;
     background-image: url(./img/memoji_png.png);
     background-size: contain;
@@ -180,14 +184,6 @@ body{
     text-indent: -9999px;
     border-radius: 50%;
 }
-/* .profile_background{
-    position: absolute;
-    width: 190px;
-    height: 190px;
-    top: 50px;
-    border-radius: 50%;
-    background-color: #efefef;
-} */
 .about_text{
     position: relative;
     width: 100%;
@@ -218,8 +214,7 @@ body{
     position: relative;
     width: 100%;
     height: auto;
-    margin-bottom: 50px;
-    margin-top: 30px;
+    margin-top: 50px;
     font-family: 'Montserrat', sans-serif;
 }
 .about_career{
@@ -241,7 +236,7 @@ body{
 #tech_section{
     position: relative;
     width: 100%;
-    margin-top: 30px;
+    margin-top: 90px;
 }
 .tech_container{
     margin: 0 auto;
@@ -306,12 +301,17 @@ body{
 #footer {
     position: relative;
     width: 100%;
+    height: 32vh;
     margin: 0 auto;
 }
-.contact_container{
-    height: 24vh;
+#contact_section {
     text-align: center;
     font-family: 'Montserrat', sans-serif;
+} 
+.contact_container{
+    text-align: left;
+    margin-bottom: 0;
+    padding: 22px;
 }
 .button_container{
     margin: 0 auto;
@@ -323,30 +323,68 @@ body{
     width: 100px;
     font-size: 16px;
     font-weight: 600;
-    color: #fff;
+    color: #222;
     cursor: pointer;
     margin: 6px;
-    padding: 10px;
+    border: 1px solid;
+    padding: 0px;
     text-align:center;
-    border: none;
     background-size: 300% 100%;
     border-radius: 50px;
-    background-image: linear-gradient(to right, #25aae1, #4481eb, #04befe, #3f86ed);
-    box-shadow: 0 4px 15px 0 rgba(65, 132, 234, 0.75);
 }
 .button_url:hover{
-    background-position: 100% 0;
-    transition: all .4s ease-in-out;
+    border: 1px solid #cee5fc;
+    background-color: #cee5fc;
 }
-.button_url:focus{
-    outline: none;
+/* galaxy fold */
+@media all and (min-width: 280px){
+    .toggle_menu {
+        position: fixed;
+        display: none;
+        z-index: 1;
+        bottom: 58px;
+        right: 15px;
+    }
 }
-
-
+/* i phone XR */
+@media all and (min-width: 414px) {
+    .side_toggle_button {
+        bottom: 83px;
+    }
+    .toggle_menu {
+        bottom: 135px;
+    }
+    /* footer */
+    #footer {
+        height: 36vh;
+    }
+}
 /* 태블릿 아이패드 air */
 @media all and (min-width: 768px) {
     body{
         width: 100%;
+    }
+    /* scroll progress */
+    .scroll_progress, .scroll_progress p{
+        display: block;
+    }
+    .scroll_progress{
+        position: fixed;
+        top:0;
+        left:0;
+        height:10px;
+        background-color: #fda500;
+        font-size: 24px;
+        z-index: 15;
+    }
+    .scroll_progress p {
+        position: fixed;
+        top: 30px;
+        left: 1px;
+        font-size: 0.7em;
+        font-family: 'Raleway', sans-serif;
+        z-index: 15px;
+        rotate: -90deg;
     }
     /* toggle_display none */
     .side_toggle_button{
@@ -375,7 +413,7 @@ body{
     }
     .navbar_box ul li{
         margin-bottom: 30px;
-        font-size: 20px;
+        font-size: 19px;
     }
     /* home section */
     #home_section{
@@ -414,7 +452,7 @@ body{
         width: 90%;
         height: 450px;
         margin: 0 auto;
-        margin-top: 30px;
+        margin-top: 70px;
     }
     .about_container {
         position: relative;
@@ -459,9 +497,16 @@ body{
         padding: 10px;
     }
     /* career_section */
+    #career_section{
+        margin-top: 90px;
+    }
     .career_list{
         display: flex;
         justify-content: space-around;
+    }
+    /* tech section */
+    #tech_section{
+        margin-top: 90px;
     }
     /* more skills */
     .more_skills{
@@ -495,19 +540,20 @@ body{
         padding-left: 0;
     }
     /* footer */
-    .contact_container {
-        height: 35vh;
-        text-align: center;
-        font-family: 'Montserrat', sans-serif;
-    }   
+    #footer {
+        height: 45vh;
+    }
     .button_container{
-        margin: 0 auto;
         margin-bottom: 10px;
         text-align: center;
-        display: block;
     }
 }
-
+/* i pad Air */
+@media all and (min-width: 820px){
+    #footer {
+        height: 55vh;
+    }
+}
 /* 데스크탑 */
 @media all and (min-width: 960px) {
     body{
@@ -519,6 +565,7 @@ body{
     .toggle_menu{
         display: none;
     }
+    /* about section */
     #about_section {
         position: relative;
         width: 70%;
@@ -544,6 +591,7 @@ body{
         text-align: center;
         margin-bottom: 50px;
     }
+    /* tech skill section */
     .tech_container {
         margin: 0 auto;
         width: 70%;
@@ -552,9 +600,14 @@ body{
         width: 70%;
         margin: 0px auto;
     }
-    .contact_container {
-        height: 17vh;
-        text-align: center;
-        font-family: 'Montserrat', sans-serif;
+}
+@media all and (min-width: 1024px){
+    #footer {
+        height: 43vh;
     }
 }
+@media all and (min-width: 1280px){
+    #footer {
+        height: 35vh;
+    }
+} 
