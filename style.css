@@ -162,6 +162,7 @@ body::-webkit-scrollbar-track {
     text-align: left;
     line-height: 34px;
     font-size: 30px;
+    cursor: default;
     background: #70b8ff;
 }
 .home_container {
@@ -210,7 +211,6 @@ body::-webkit-scrollbar-track {
     margin-top: 30px;
     border-radius: 10px;
     font-family: 'MICEGothic Bold';
-    background-color: bisque;
 }
 .about_container{
     position: relative;
@@ -297,7 +297,9 @@ body::-webkit-scrollbar-track {
     margin-bottom: 0;
 }
 .career_list h3{
+    /* border-bottom: 5px solid #cee5fc; */
     background-color: #cee5fc;
+    font-style: italic;
 }
 /* tech section */
 #tech_section{
@@ -414,23 +416,27 @@ body::-webkit-scrollbar-track {
         height: 37vh;
     }
     #footer {
-        height: 36vh;
+        height: 19vh;
     }
 }
+/* samsung galaxy a51 */
 /* i phone XR */
 @media all and (min-width: 414px) {
     .side_toggle_button {
-        bottom: 162px;
+        bottom: 44px;
     }
     .toggle_menu {
-        bottom: 215px;
+        bottom: 100px;
+    }
+    .about_title{
+        margin-bottom: 20px;
     }
     .profile_img_container {
-        height: 40vh;
+        height: 37vh;
     }
     /* footer */
     #footer {
-        height: 39vh;
+        height: 24vh;
     }
 }
 /* 태블릿 아이패드 air */
@@ -580,7 +586,7 @@ body::-webkit-scrollbar-track {
         margin-top: 90px;
     }
     .about_career h3{
-        margin-bottom: 2.5rem
+        margin-bottom: 1.5rem;
     }
     .career_list{
         display: flex;
@@ -677,7 +683,7 @@ body::-webkit-scrollbar-track {
     }
     .about_career h3{
         text-align: center;
-        margin-bottom: 50px;
+        margin-bottom: 1.5rem;
     }
     /* tech skill section */
     .tech_container {
@@ -691,17 +697,17 @@ body::-webkit-scrollbar-track {
 }
 @media all and (min-width: 1024px){
     #footer {
-        height: 39vh;
+        height: 19vh;
     }
     .contact_container{
-        padding: 55px;
+        padding: 10px;
     }
 }
 @media all and (min-width: 1280px){
     #footer {
-        height: 33.1vh;
+        height: 19.1vh;
     }
     .contact_container{
-        padding: 69px;
+        padding: 10px;
     }
 }
