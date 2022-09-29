@@ -52,7 +52,7 @@ function typing(){
     if(index > content.length){
         $text.textContent = ""
         index = 0;
-        sleep(1500);
+        /* sleep(1500); */
     }
 }
 setInterval(typing, 200)
@@ -127,7 +127,7 @@ $(window).on('scroll', function () {
         isVisible = true;
     }
 });
-//해당 영역으로 접근 시 프로그레스 바 차오르게 하기
+//해당 영역으로 접근 시 프로그레스 bar 차오르게 하기
 function checkVisible(elm, eval) {
     eval = eval || 'object visible';
     let viewportHeight = $(window).height();
@@ -151,11 +151,15 @@ function checkVisible(elm, eval) {
   }
   document.addEventListener('DOMContentLoaded',ready); //DOMContentLoaded : q스택에서 렌더가 다 되고 페이지 뜨기 직전의 타이밍에 ready함수 실행 */
 
-
-
 /* modal event */
+//모달창이 띄워졌을 때 스크롤 막아놓기
 jQuery(document).ready(function(){
   $("#modal").show();
+  $('#modal').on('scroll touchmove mousewheel', function(event){
+    event.preventDefault();
+    event.stopPropagation();
+    return false;
+  });
 });
 function closeModal(){
   $('.modal_container').hide();

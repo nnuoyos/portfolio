@@ -45,7 +45,9 @@ body::-webkit-scrollbar-track {
     width: 100%;
     font-family: 'MICEGothic Bold';
 }
-
+.modal_notice{
+    font-size: 15px;
+}
 .modal_close{
     cursor:pointer;
     background-color:#DDDDDD;
@@ -389,7 +391,7 @@ body::-webkit-scrollbar-track {
     border-radius: 3px;
     padding: 5px;
     color: #fff;
-    background-color: rgba(0, 0, 0, 0.4);
+    background-color: rgba(0, 0, 0, 0.2);
 }
 /* galaxy fold */
 @media all and (min-width: 280px){
@@ -633,6 +635,9 @@ body::-webkit-scrollbar-track {
 @media all and (min-width: 960px) {
     body{
         width: 100%;
+    }
+    .modal_content{
+        width: 33%;
     }
     .side_toggle_button{
         display: none;
