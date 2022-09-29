@@ -206,10 +206,11 @@ body::-webkit-scrollbar-track {
 #about_section{
     position: relative;
     width: 100%;
-    height: 800px;
+    height: 600px;
     margin-top: 30px;
     border-radius: 10px;
     font-family: 'MICEGothic Bold';
+    background-color: bisque;
 }
 .about_container{
     position: relative;
@@ -227,13 +228,13 @@ body::-webkit-scrollbar-track {
     text-align: center;
     font-size: 29px;
     letter-spacing: 0px;
-    margin-bottom: 50px;
+    margin-bottom: 0px;
     font-weight: 300;
 }
 .profile_img_container{
     position: relative;
     width: 62%;
-    height: 53vh;
+    height: 45vh;
     z-index: 2;
     background-image: url(./img/memoji_png.png);
     background-size: contain;
@@ -247,7 +248,7 @@ body::-webkit-scrollbar-track {
     font-size: 15px;
     text-align: center;
     margin-top: -50px;
-    padding: 35px;
+    padding: 0px;
 }
 .about_hello_title{
     font-size: 50px;
@@ -266,7 +267,7 @@ body::-webkit-scrollbar-track {
 }
 .about_contents_text{
     width: 100%;
-    font-size: 16px;
+    font-size: 15px;
     line-height: 1.8em;
     margin-top: 15px;
     padding: 5px;
@@ -302,7 +303,7 @@ body::-webkit-scrollbar-track {
 #tech_section{
     position: relative;
     width: 100%;
-    margin-top: 90px;
+    margin-top: 50px;
 }
 .tech_container{
     margin: 0 auto;
@@ -367,8 +368,12 @@ body::-webkit-scrollbar-track {
 #footer {
     position: relative;
     width: 100%;
-    height: 32vh;
+    height: 29vh;
     margin: 0 auto;
+    /* background-color: rgb(235, 201, 235); */
+}
+#footer p{
+    margin-bottom: 0;
 }
 #contact_section {
     text-align: center;
@@ -377,21 +382,15 @@ body::-webkit-scrollbar-track {
 .contact_container{
     text-align: center;
     margin-bottom: 0;
-    padding: 22px;
+    padding: 37px;
 }
 .contact_url_container{
-    width: 206px;
+    width: 274px;
     margin: 0 auto;
     margin-bottom: 10px;
     text-align: center;
     display: flex;
     justify-content: space-between;
-}
-.contact_mail a:hover{
-    border-radius: 3px;
-    padding: 5px;
-    color: #fff;
-    background-color: rgba(0, 0, 0, 0.2);
 }
 /* galaxy fold */
 @media all and (min-width: 280px){
@@ -403,29 +402,35 @@ body::-webkit-scrollbar-track {
         right: 15px;
     }
 }
+/* i phone 12 pro */
+@media all and (min-width: 390px){
+    .side_toggle_button {
+        bottom: 110px;
+    }
+    .toggle_menu {
+        bottom: 164px;
+    }
+    .profile_img_container {
+        height: 37vh;
+    }
+    #footer {
+        height: 36vh;
+    }
+}
 /* i phone XR */
 @media all and (min-width: 414px) {
     .side_toggle_button {
-        bottom: 83px;
+        bottom: 162px;
     }
     .toggle_menu {
-        bottom: 135px;
+        bottom: 215px;
     }
     .profile_img_container {
         height: 40vh;
     }
     /* footer */
     #footer {
-        height: 32vh;
-    }
-}
-/* i phone 12 pro */
-@media all and (min-width: 390px){
-    .profile_img_container {
-        height: 41vh;
-    }
-    #footer {
-        height: 31vh;
+        height: 39vh;
     }
 }
 /* 태블릿 아이패드 air */
@@ -618,7 +623,10 @@ body::-webkit-scrollbar-track {
     }
     /* footer */
     #footer {
-        height: 40vh;
+        height: 36.1vh;
+    }
+    .contact_container{
+        padding: 42px;
     }
     .button_container{
         margin-bottom: 10px;
@@ -628,7 +636,7 @@ body::-webkit-scrollbar-track {
 /* i pad Air */
 @media all and (min-width: 820px){
     #footer {
-        height: 48vh;
+        height: 43.8vh;
     }
 }
 /* 데스크탑 */
@@ -685,9 +693,15 @@ body::-webkit-scrollbar-track {
     #footer {
         height: 39vh;
     }
+    .contact_container{
+        padding: 55px;
+    }
 }
 @media all and (min-width: 1280px){
     #footer {
-        height: 30vh;
+        height: 33.1vh;
+    }
+    .contact_container{
+        padding: 69px;
     }
 }
