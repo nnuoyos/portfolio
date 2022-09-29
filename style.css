@@ -425,7 +425,7 @@ body::-webkit-scrollbar-track {
         height: 41vh;
     }
     #footer {
-        height: 27vh;
+        height: 31vh;
     }
 }
 /* 태블릿 아이패드 air */
@@ -618,7 +618,7 @@ body::-webkit-scrollbar-track {
     }
     /* footer */
     #footer {
-        height: 37vh;
+        height: 40vh;
     }
     .button_container{
         margin-bottom: 10px;
@@ -628,7 +628,7 @@ body::-webkit-scrollbar-track {
 /* i pad Air */
 @media all and (min-width: 820px){
     #footer {
-        height: 45vh;
+        height: 48vh;
     }
 }
 /* 데스크탑 */

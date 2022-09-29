@@ -59,7 +59,7 @@ setInterval(typing, 200)
 
 /* mobile size - side toggle button */
 $('.side_toggle_button').click(function (event) {
-    event.stopPropagation(); //부모태그로의 이벤트 stop
+    //event.stopPropagation(); //부모태그로의 이벤트 stop
     $('.toggle_menu').slideToggle();
 });
 
