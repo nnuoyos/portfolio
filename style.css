@@ -3,6 +3,12 @@
     font-family: "Monument";
     src: url("https://res.cloudinary.com/holatresveces/raw/upload/v1573001944/MonumentExtended-Ultrabold_clzvv7.otf");
   }
+@font-face {
+    font-family: 'MICEGothic Bold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2206-01@1.0/MICEGothic Bold.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+}
 /* 모바일 아이폰 기준 */
 html{
     scroll-behavior: smooth;
@@ -153,6 +159,7 @@ body{
     height: 800px;
     margin-top: 30px;
     border-radius: 10px;
+    font-family: 'MICEGothic Bold';
 }
 .about_container{
     position: relative;
@@ -190,7 +197,7 @@ body{
     font-size: 15px;
     text-align: center;
     margin-top: -50px;
-    padding: 20px;
+    padding: 35px;
 }
 .about_hello_title{
     font-size: 50px;
@@ -198,13 +205,22 @@ body{
     margin-bottom: 30px;
 }
 .about_sub_title{
-    font-size: 18px;
+    font-size: 19px;
+    padding: 0px;
     font-weight: 600;
     line-height: 2em;
+    display: inline; vertical-align: middle;
+    border-right: .05em solid black;
+    animation:  cursor 0.2s ease infinite;
+    margin-bottom: 25px;
 }
 .about_contents_text{
+    width: 100%;
     font-size: 16px;
     line-height: 1.8em;
+    margin-top: 15px;
+    padding: 5px;
+    text-align: center;
 }
 .about_career ul{
     padding-left: 0;
@@ -309,32 +325,17 @@ body{
     font-family: 'Montserrat', sans-serif;
 } 
 .contact_container{
-    text-align: left;
+    text-align: center;
     margin-bottom: 0;
     padding: 22px;
 }
-.button_container{
+.contact_url_container{
+    width: 150px;
     margin: 0 auto;
     margin-bottom: 10px;
     text-align: center;
-    display: inline-grid;
-}
-.button_url{
-    width: 100px;
-    font-size: 16px;
-    font-weight: 600;
-    color: #222;
-    cursor: pointer;
-    margin: 6px;
-    border: 1px solid;
-    padding: 0px;
-    text-align:center;
-    background-size: 300% 100%;
-    border-radius: 50px;
-}
-.button_url:hover{
-    border: 1px solid #cee5fc;
-    background-color: #cee5fc;
+    display: flex;
+    justify-content: space-between;
 }
 /* galaxy fold */
 @media all and (min-width: 280px){
@@ -356,7 +357,7 @@ body{
     }
     /* footer */
     #footer {
-        height: 36vh;
+        height: 32vh;
     }
 }
 /* 태블릿 아이패드 air */
@@ -373,7 +374,8 @@ body{
         top:0;
         left:0;
         height:10px;
-        background-color: #fda500;
+        background: linear-gradient(to right, #ffd89b, #19547b);
+        /* border-radius: 5px; */
         font-size: 24px;
         z-index: 15;
     }
@@ -488,6 +490,10 @@ body{
         background-color: #efefef;
         z-index: 3;
     }
+    .about_contents_text{
+        text-align: left;
+        font-size: 15px;
+    }
     .about_text{
         position: relative;
         width: 100%;
@@ -499,6 +505,9 @@ body{
     /* career_section */
     #career_section{
         margin-top: 90px;
+    }
+    .about_career h3{
+        margin-bottom: 2.5rem
     }
     .career_list{
         display: flex;
@@ -541,7 +550,7 @@ body{
     }
     /* footer */
     #footer {
-        height: 45vh;
+        height: 41vh;
     }
     .button_container{
         margin-bottom: 10px;
@@ -551,7 +560,7 @@ body{
 /* i pad Air */
 @media all and (min-width: 820px){
     #footer {
-        height: 55vh;
+        height: 50vh;
     }
 }
 /* 데스크탑 */
@@ -603,11 +612,11 @@ body{
 }
 @media all and (min-width: 1024px){
     #footer {
-        height: 43vh;
+        height: 39vh;
     }
 }
 @media all and (min-width: 1280px){
     #footer {
-        height: 35vh;
+        height: 30vh;
     }
 } 
