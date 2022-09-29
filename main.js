@@ -32,8 +32,8 @@ document.body.addEventListener('mousemove', (e) => {
 });
 
 /* intro typing */
-const content = "늘 새로운 도전을 꿈꾸는 프론트엔드 개발자 장소영 입니다"
-const text = document.querySelector(".intro_text")
+const $text = document.querySelector(".intro_text");
+const content = "늘 새로운 도전을 꿈꾸는\n프론트엔드 개발자 장소영 입니다"
 let index = 0;
 
  function sleep(delay){ 
@@ -42,12 +42,17 @@ let index = 0;
     }
 
 function typing(){
-    text.textContent += content[index++];
-    //1초 후 다시 처음부터 실행 
+    $text.innerHTML += content[index];
+    index++;
+    if(content[index]==="\n"){
+        $text.innerHTML += "<br/>";
+        index++;
+    }
+    //1.5 초 후 다시 실행
     if(index > content.length){
-        text.textContent = ""
+        $text.textContent = ""
         index = 0;
-        sleep(1000);
+        sleep(1500);
     }
 }
 setInterval(typing, 200)
