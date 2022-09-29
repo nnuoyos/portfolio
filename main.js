@@ -36,10 +36,10 @@ const $text = document.querySelector(".intro_text");
 const content = "늘 새로운 도전을 꿈꾸는\n프론트엔드 개발자 장소영 입니다"
 let index = 0;
 
- function sleep(delay){ 
+/*  function sleep(delay){ 
      const start = new Date().getTime(); 
      while (new Date().getTime() < start + delay); 
-    }
+    } */
 
 function typing(){
     $text.innerHTML += content[index];
@@ -150,3 +150,13 @@ function checkVisible(elm, eval) {
     }
   }
   document.addEventListener('DOMContentLoaded',ready); //DOMContentLoaded : q스택에서 렌더가 다 되고 페이지 뜨기 직전의 타이밍에 ready함수 실행 */
+
+
+
+/* modal event */
+jQuery(document).ready(function(){
+  $("#modal").show();
+});
+function closeModal(){
+  $('.modal_container').hide();
+}

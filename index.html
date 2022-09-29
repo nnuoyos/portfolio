@@ -23,6 +23,25 @@
     <title>soyoung's portfolio</title>
 </head>
 <body>
+  <div id="modal" class="modal_container">
+    <div class="modal_content">
+      <div class="page_header">
+        <h5>신입 프론트엔드 개발자 <br>장소영의 포트폴리오를<br>보러와 주셔서 감사합니다!
+      </div>
+      <div class="row">
+        <div class="col-sm-12">
+          <div class="row">
+            <div class="col-sm-12">
+              <p>본 사이트는 상업적 목적이 아닌 개인 포트폴리오 용도로 제작 되었습니다. 홈페이지 일부 내용과 기타 이미지 등은 출처가 있음을 밝힙니다.</ㅔ>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal_close" onClick="closeModal();">
+        <span class="pop_bt modalCloseBtn">확인 후 닫기</span>
+      </div>
+    </div>
+  </div>
   <div class="scroll_progress">
     <p class="scroll_progress_status"></p>
   </div>
@@ -251,9 +270,10 @@
     <section id="contact_section">
       <address class="contact_container">
         <h3 id="title" class="contact_title">contact</h3>
-          <p>e-mail / kakao youngadult3104@gmail.com</p>
+          <p class="contact_mail"><a href="mailto:"youngadult3104@gmail.com>e-mail here</a></p>
           <p>T. +82 (0)10 3503 9318</p>
           <div class="contact_url_container">
+            <a href="https://open.kakao.com/o/snsRWrEe" target="_blank"><img src="https://img.shields.io/badge/Kakao-000000?style=flat&logo=KakaoTalk&logoColor=white"/></a>
             <a href="https://github.com/nnuoyos" target="_blank"><img src="https://img.shields.io/badge/Github-000000?style=flat&logo=Github&logoColor=white"/></a>
             <a href="https://nnuoyos.tistory.com/" target="_blank"><img src="https://img.shields.io/badge/Tistory-000000?style=flat&logo=Tistory&logoColor=white"/></a>
           </div>
