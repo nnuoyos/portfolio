@@ -153,7 +153,7 @@ function checkVisible(elm, eval) {
 
 /* modal event */
 //모달창이 띄워졌을 때 스크롤 막아놓기
-jQuery(document).ready(function(){
+/* jQuery(document).ready(function(){
   $("#modal").show();
   $('#modal').on('scroll touchmove mousewheel', function(event){
     event.preventDefault();
@@ -163,4 +163,4 @@ jQuery(document).ready(function(){
 });
 function closeModal(){
   $('.modal_container').hide();
-}
+} */
