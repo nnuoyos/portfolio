@@ -9,7 +9,7 @@
     font-weight: 700;
     font-style: normal;
 }
-/* 모바일 아이폰 기준 */
+/* 모바일 i phone SE 기준 */
 html{
     scroll-behavior: smooth;
 }
@@ -38,8 +38,7 @@ body::-webkit-scrollbar-track {
     background-color: grey;
     border-radius: 10px;
     box-shadow: inset 0px 0px 5px white;
-  }
-
+}
 /* modal */
 #modal{
     width: 100%;
@@ -62,7 +61,6 @@ body::-webkit-scrollbar-track {
     top: 0;
     width: 100%;
     height: 100%;
-    /* overflow: auto; */
     z-index: 10;
     background-color: rgb(255, 255, 255);
     background-color: rgba(255, 255, 255, 0.4);
@@ -234,7 +232,8 @@ body::-webkit-scrollbar-track {
 .profile_img_container{
     position: relative;
     width: 62%;
-    height: 45vh;
+    height: 316px;
+    top: 5px;
     z-index: 2;
     background-image: url(./img/memoji_png.png);
     background-size: contain;
@@ -270,7 +269,6 @@ body::-webkit-scrollbar-track {
     font-size: 15px;
     line-height: 1.8em;
     margin-top: 15px;
-    padding: 5px;
     text-align: center;
 }
 .about_career ul{
@@ -297,7 +295,6 @@ body::-webkit-scrollbar-track {
     margin-bottom: 0;
 }
 .career_list h3{
-    /* border-bottom: 5px solid #cee5fc; */
     background-color: #cee5fc;
     font-style: italic;
 }
@@ -394,15 +391,14 @@ body::-webkit-scrollbar-track {
     display: flex;
     justify-content: space-between;
 }
-/* galaxy fold */
-@media all and (min-width: 280px){
-    .toggle_menu {
-        position: fixed;
-        display: none;
-        z-index: 1;
-        bottom: 58px;
-        right: 15px;
-    }
+.btn-primary{
+    background-color: #fff;
+    border-color: #0d6efd;
+    color: #0d6efd;
+}
+.btn-primary:hover{
+    background-color: #0d6efd;
+    border-color: #0d6efd;
 }
 /* i phone 12 pro */
 @media all and (min-width: 390px){
@@ -419,7 +415,6 @@ body::-webkit-scrollbar-track {
         height: 19vh;
     }
 }
-/* samsung galaxy a51 */
 /* i phone XR */
 @media all and (min-width: 414px) {
     .side_toggle_button {
@@ -439,7 +434,7 @@ body::-webkit-scrollbar-track {
         height: 24vh;
     }
 }
-/* 태블릿 아이패드 air */
+/* 태블릿 iPad mini 기준 */
 @media all and (min-width: 768px) {
     body{
         width: 100%;
@@ -454,7 +449,6 @@ body::-webkit-scrollbar-track {
         left:0;
         height:5px;
         background: linear-gradient(to right, #ffd89b, #19547b);
-        /* border-radius: 5px; */
         font-size: 24px;
         z-index: 15;
     }
@@ -540,10 +534,11 @@ body::-webkit-scrollbar-track {
         width: 100%;
         height: 65%;
         display: flex;
-        top: 36%;
+        top: 40%;
         flex-wrap: nowrap;
         align-items: center;
         justify-content: space-around;
+        /* background-color: thistle; */
     }
     .about_title {
         text-align: center;
@@ -554,11 +549,12 @@ body::-webkit-scrollbar-track {
     .profile_img_container{
         position: relative;
         width: 77%;
-        height: 31vh;
+        height: 373px;
         z-index: 5;
-        top: -3px;
-        left: 0px;
+        top: 0;
+        left: 0;
         border-radius: 50%;
+        background-color: rgb(255, 230, 157);
     }
     .profile_background{
         position: absolute;
@@ -577,9 +573,8 @@ body::-webkit-scrollbar-track {
         position: relative;
         width: 100%;
         text-align: left;
-        margin-right: 60px;
         margin-top: 20px;
-        padding: 10px;
+        margin-left: 10%;
     }
     /* career_section */
     #career_section{
@@ -646,7 +641,7 @@ body::-webkit-scrollbar-track {
     }
 }
 /* 데스크탑 */
-@media all and (min-width: 960px) {
+@media all and (min-width: 1280px) {
     body{
         width: 100%;
     }
@@ -669,10 +664,10 @@ body::-webkit-scrollbar-track {
     }
     .profile_img_container {
         position: relative;
-        width: 96%;
+        width: 78%;
         height: 56vh;
         z-index: 5;
-        top: -3px;
+        top: 21px;
         left: 80px;
         border-radius: 50%;
     }
@@ -684,6 +679,12 @@ body::-webkit-scrollbar-track {
     .about_career h3{
         text-align: center;
         margin-bottom: 1.5rem;
+    }
+    .about_title{
+        margin-bottom: 48px;
+    }
+    .about_text{
+        margin-left: 20%;
     }
     /* tech skill section */
     .tech_container {
@@ -703,11 +704,11 @@ body::-webkit-scrollbar-track {
         padding: 10px;
     }
 }
-@media all and (min-width: 1280px){
+/* @media all and (min-width: 1280px){
     #footer {
         height: 19.1vh;
     }
     .contact_container{
         padding: 10px;
     }
-}
+} */
