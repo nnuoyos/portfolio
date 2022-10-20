@@ -103,7 +103,7 @@ body::-webkit-scrollbar-track {
     position: fixed;
     display: none;
     z-index: 1;
-    bottom: 0px;
+    bottom: 60px;
     right: 15px;
 }
 .toggle_menu li{
