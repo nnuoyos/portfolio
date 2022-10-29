@@ -554,7 +554,6 @@ body::-webkit-scrollbar-track {
         top: 0;
         left: 0;
         border-radius: 50%;
-        background-color: rgb(255, 230, 157);
     }
     .profile_background{
         position: absolute;
