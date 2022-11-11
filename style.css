@@ -538,7 +538,6 @@ body::-webkit-scrollbar-track {
         flex-wrap: nowrap;
         align-items: center;
         justify-content: space-around;
-        /* background-color: thistle; */
     }
     .about_title {
         text-align: center;
@@ -548,11 +547,11 @@ body::-webkit-scrollbar-track {
     }
     .profile_img_container{
         position: relative;
-        width: 77%;
+        width: 100%;
         height: 373px;
         z-index: 5;
         top: 0;
-        left: 0;
+        left: 7%;
         border-radius: 50%;
     }
     .profile_background{
