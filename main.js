@@ -139,6 +139,9 @@ function checkVisible(elm, eval) {
     if (eval == 'above') return y < viewportHeight + scrolltop;
 }
 
+//work section collapse 
+
+
 /* pop up */
 /* function ready(){
     //취소 버튼 누르면 페이지 종료 되기
