@@ -81,14 +81,14 @@ $(function () {
 const bar1 = document.querySelector('#html_bar .progress');
 const bar2 = document.querySelector('#css_bar .progress');
 const bar3 = document.querySelector('#js_bar .progress');
-/* const bar4 = document.querySelector('#jq_bar .progress'); */
+const bar4 = document.querySelector('#jq_bar .progress');
 const bar5 = document.querySelector('#react_bar .progress');
 const bar6 = document.querySelector('#bt_bar .progress');
 
 let htmlTotal = 80;
 let cssTotal = 85;
-let jsTotal = 72;
-/* let jqTotal = 68; */
+let jsTotal = 65;
+let jqTotal = 68;
 let reactTotal = 60;
 let btTotal = 70;
 
@@ -96,7 +96,7 @@ let t = 0;
 bar1.style.width = 0;
 bar2.style.width = 0;
 bar3.style.width = 0;
-/* bar4.style.width = 0; */
+bar4.style.width = 0;
 bar5.style.width = 0;
 bar6.style.width = 0;
 
@@ -115,10 +115,10 @@ $(window).on('scroll', function () {
             bar3.style.width = t + '%';
             t++ >= jsTotal && clearInterval(bar3Animation);
         }, 80);
-        /* const bar4Animation = setInterval(() => {
+        const bar4Animation = setInterval(() => {
             bar4.style.width = t + '%';
             t++ >= jqTotal && clearInterval(bar4Animation);
-        }, 80); */
+        }, 80);
         const bar5Animation = setInterval(() => {
             bar5.style.width = t + '%';
             t++ >= reactTotal && clearInterval(bar5Animation);
