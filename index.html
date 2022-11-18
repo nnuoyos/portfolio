@@ -168,12 +168,12 @@
             </div>
             <div id="js_bar" class="progress_bar">
               <li class="progress">JS</li>
-              <li class="percentage">65%</li>
+              <li class="percentage">72%</li>
             </div>
-            <div id="jq_bar" class="progress_bar">
+            <!-- <div id="jq_bar" class="progress_bar">
               <li class="progress">JQUERY</li>
               <li class="percentage">68%</li>
-            </div>
+            </div> -->
             <div id="react_bar" class="progress_bar">
               <li class="progress">REACT</li>
               <li class="percentage">60%</li>
@@ -190,6 +190,7 @@
               <li>Python</li>
               <li>Java</li>
               <li>C/C++</li>
+              <li>Jquery</li>
               <li>Type Script (현재 공부중)</li>
               <li>Next.JS (현재 공부중)</li>
             </ul>
@@ -211,50 +212,72 @@
           </div>
       </div>
     </section>
-    <!-- #tech_section end-->
+    <!-- #tech_section end -->
     <section id="works_section">
       <div class="works_container">
-        <h3 id="title">WORKS</h3>
-        <div id="works_card" class="row row-cols-1 row-cols-md-2 g-4">
-          <div class="col">
+        <h3 id="title" class="work_title">WORKS</h3>
+        <div id="works_card" class="row row-cols-1 row-cols-md-2 g-4" id="accordion" role="tablist" aria-multiselectable="true">
+          <div class="col panel panel-default">
             <div class="card">
-              <img src="./img/thek_thumbnail.jpg" class="card-img-top" alt="...">
-              <div class="card-body">
+              <a href="#collapseExample" role="button" data-bs-toggle="collapse">
+                <img src="./img/thek_thumbnail.jpg" class="card-img-top" alt="...">
                 <h5 class="card-title">the-k hotel&resort clone coding</h5>
-                <p class="card-text">작업내용: the-k hotel&resort의 클론 사이트<br>작업기간: 2주 <br>사용기술: html, css, javascript, jquery, slick<br></p>
+              </a>
+              <div id="collapseExample" class="card-body panel-collapse collapse" >
+                <p class="card-text">[작업소개] <br>the-k hotel&resort의 클론 사이트 입니다.
+                  <br>슬라이드 페이지네이션과 탭 메뉴, 토글 메뉴, 버튼 슬라이드, 카카오맵 사용으로 해당 사이트의 기능을 최대한 구현 하려고 하였습니다. 
+                  <br><br>작업기간 : 2주 
+                  <br>사용기술 : html, css, javascript, jquery, slick<br></p>
                 <a href="https://thek-clonesite.netlify.app/" target="_blank" class="btn btn-primary">Go site</a>
                 <a href="https://github.com/nnuoyos/thek_clone" target="_blank" class="btn btn-primary">Code</a>
               </div>
             </div>
           </div>
-          <div class="col">
+          <div class="col panel panel-default">
             <div class="card">
-              <img src="./img/todoList_thumbnail.jpg" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">to-do list</h5>
-                <p class="card-text">작업내용: 바닐라 자바스크립트로 구현한 투두 리스트<br>작업기간: 5일 <br>사용기술: html, css, javascript<br></p>
-                <a href="https://todolist-soyoung.netlify.app/" target="_blank" class="btn btn-primary">Go site</a>
-                <a href="https://github.com/nnuoyos/todo-list" target="_blank" class="btn btn-primary">Code</a>
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="card">
-              <img src="./img/movieApp-tunmbnail.jpg" class="card-img-top" alt="...">
-              <div class="card-body">
+              <a href="#collapseExample2" role="button" data-bs-toggle="collapse">
+                <img src="./img/movieApp-tunmbnail.jpg" class="card-img-top" alt="...">
                 <h5 class="card-title">movie site</h5>
-                <p class="card-text">작업내용: 실시간 영화 리스트를 볼 수 있는 영화 사이트<br>작업기간: 1주 <br>사용기술: react, slick<br></p>
+              </a>
+              <div id="collapseExample2" class="card-body panel-collapse collapse">
+                <p class="card-text">[작업소개] 
+                <br>실시간 영화 리스트를 볼 수 있는 영화 사이트를 react를 사용하여 작업 하였습니다.
+                <br><br>YTS torrents API 이용하여 제작, 평점 8.5 점 이상의 영화 리스트로 설정 하였습니다. 
+                <br><br>영화 제목을 클릭하면 영화 소개 페이지로 이동 하게 됩니다.
+                <br><br>작업기간 : 1주 <br>사용기술 : react, slick<br></p>
                 <a href="https://react-movie-site-soyoung.netlify.app/" target="_blank" class="btn btn-primary">Go site</a>
                 <a href="https://github.com/nnuoyos/react-for-movie-ver1" target="_blank" class="btn btn-primary">Code</a>
               </div>
             </div>
           </div>
-          <div class="col">
+          <div class="col panel panel-default">
             <div class="card">
-              <img src="./img/weatherApp_thumbnail.jpg" class="card-img-top" alt="...">
-              <div class="card-body">
+              <a href="#collapseExample3" role="button" data-bs-toggle="collapse">
+                <img src="./img/todoList_thumbnail.jpg" class="card-img-top" alt="...">
+                <h5 class="card-title">to-do list</h5>
+              </a>
+              <div id="collapseExample3" class="card-body panel-collapse collapse">
+                <p class="card-text">[작업소개]
+                  <br>바닐라 자바스크립트로 구현한 유저가 할 일을 입력하여 추가 할 수 있는 투두 리스트 입니다.
+                  <br><br>되돌리기 버튼과 삭제 버튼을 사용하면 진행중과 완료탭으로 분류 됩니다. 
+                  <br><br>전체 탭에서 유저가 입력한 리스트의 모든 항목을 볼 수 있습니다.
+                  <br><br>작업기간 : 5일 <br>사용기술 : html, css, javascript<br></p>
+                <a href="https://todolist-soyoung.netlify.app/" target="_blank" class="btn btn-primary">Go site</a>
+                <a href="https://github.com/nnuoyos/todo-list" target="_blank" class="btn btn-primary">Code</a>
+              </div>
+            </div>
+          </div>
+          <div class="col panel panel-default">
+            <div class="card">
+              <a href="#collapseExample4" role="button" data-bs-toggle="collapse">
+                <img src="./img/weatherApp_thumbnail.jpg" class="card-img-top" alt="...">
                 <h5 class="card-title">weather app</h5>
-                <p class="card-text">작업내용: 현재위치,해당 도시의 현재 날씨를 알 수 있는 날씨App<br>작업기간: 2주 <br>사용기술: react, react-bootstrap<br></p>
+              </a>
+              <div id="collapseExample4" class="card-body panel-collapse collapse">
+                <p class="card-text">[작업소개] <br>현재위치, 해당 도시의 현재 날씨를 알 수 있는 날씨App을 react를 사용하여 만들어 보았습니다.
+                  <br><br>openWeatherMap API를 이용하여 제작, 현재위치와 하단 버튼의 도시별로 날씨 확인이 가능 합니다. 
+                  <br><br>도시의 날씨에 해당하는 날씨 정보와 날씨 아이콘이 보여지도록 하였고, 상단에는 도시 검색 기능을 추가 하였습니다.
+                  <br><br>작업기간 : 2주 <br>사용기술 : react, react-bootstrap<br></p>
                 <a href="https://nnuoyos.github.io/" target="_blank" class="btn btn-primary">Go site</a>
                 <a href="https://github.com/nnuoyos/react-weather" target="_blank" class="btn btn-primary">Code</a>
               </div>

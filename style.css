@@ -229,6 +229,9 @@ body::-webkit-scrollbar-track {
     margin-bottom: 0px;
     font-weight: 300;
 }
+.about_title,.work_title{
+    padding-top: 20px;
+}
 .profile_img_container{
     position: relative;
     width: 62%;
@@ -266,9 +269,9 @@ body::-webkit-scrollbar-track {
 }
 .about_contents_text{
     width: 100%;
-    font-size: 15px;
-    line-height: 1.8em;
     margin-top: 15px;
+    font-size: 15px;
+    line-height: 2.3em;
     text-align: center;
 }
 .about_career ul{
@@ -363,13 +366,15 @@ body::-webkit-scrollbar-track {
     width: 90%;
     margin: 0 auto;
 }
+.card-title{
+    text-align: center;
+}
 /* footer */
 #footer {
     position: relative;
     width: 100%;
     height: 29vh;
     margin: 0 auto;
-    /* background-color: rgb(235, 201, 235); */
 }
 #footer p{
     margin-bottom: 0;
@@ -490,6 +495,9 @@ body::-webkit-scrollbar-track {
         margin-bottom: 30px;
         font-size: 19px;
     }
+    .navbar_box li a.active{
+        border-bottom: 2px solid #ecf0f1;
+    }
     /* home section */
     #home_section{
         position: relative;
@@ -566,13 +574,14 @@ body::-webkit-scrollbar-track {
     .about_contents_text{
         text-align: left;
         font-size: 15px;
+        letter-spacing: 1.5px;
     }
     .about_text{
         position: relative;
         width: 100%;
         text-align: left;
         margin-top: 20px;
-        margin-left: 10%;
+        margin-left: -7%;
     }
     /* career_section */
     #career_section{
@@ -622,7 +631,7 @@ body::-webkit-scrollbar-track {
     }
     /* footer */
     #footer {
-        height: 36.1vh;
+        height: 47.1vh;
     }
     .contact_container{
         padding: 42px;
@@ -635,7 +644,7 @@ body::-webkit-scrollbar-track {
 /* i pad Air */
 @media all and (min-width: 820px){
     #footer {
-        height: 43.8vh;
+        height: 54.8vh;
     }
 }
 /* 데스크탑 */
@@ -678,6 +687,9 @@ body::-webkit-scrollbar-track {
         text-align: center;
         margin-bottom: 1.5rem;
     }
+    .about_contents_text{
+        letter-spacing: 3px;
+    }
     .about_title{
         margin-bottom: 48px;
     }
@@ -693,10 +705,13 @@ body::-webkit-scrollbar-track {
         width: 70%;
         margin: 0px auto;
     }
+    #footer {
+        height: 25vh;
+    }
 }
 @media all and (min-width: 1024px){
     #footer {
-        height: 19vh;
+        height: 29vh;
     }
     .contact_container{
         padding: 10px;
