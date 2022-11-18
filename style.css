@@ -222,6 +222,9 @@ body::-webkit-scrollbar-track {
     align-items: center;
     justify-content: center;
 }
+.about_title,.work_title{
+    padding-top: 20px;
+}
 .about_title{
     text-align: center;
     font-size: 29px;
@@ -270,6 +273,7 @@ body::-webkit-scrollbar-track {
     line-height: 1.8em;
     margin-top: 15px;
     text-align: center;
+    letter-spacing: 1px;
 }
 .about_career ul{
     padding-left: 0;
@@ -566,13 +570,14 @@ body::-webkit-scrollbar-track {
     .about_contents_text{
         text-align: left;
         font-size: 15px;
+        letter-spacing: 2px;
     }
     .about_text{
         position: relative;
         width: 100%;
         text-align: left;
         margin-top: 20px;
-        margin-left: 10%;
+        margin-left: 1%;
     }
     /* career_section */
     #career_section{
@@ -622,7 +627,7 @@ body::-webkit-scrollbar-track {
     }
     /* footer */
     #footer {
-        height: 36.1vh;
+        height: 61vh;
     }
     .contact_container{
         padding: 42px;
@@ -635,7 +640,7 @@ body::-webkit-scrollbar-track {
 /* i pad Air */
 @media all and (min-width: 820px){
     #footer {
-        height: 43.8vh;
+        height: 67vh;
     }
 }
 /* 데스크탑 */
@@ -693,18 +698,13 @@ body::-webkit-scrollbar-track {
         width: 70%;
         margin: 0px auto;
     }
-}
-@media all and (min-width: 1024px){
     #footer {
-        height: 19vh;
-    }
-    .contact_container{
-        padding: 10px;
+        height: 32vh;
     }
 }
-/* @media all and (min-width: 1280px){
+/* @media all and (min-width: 1024px){
     #footer {
-        height: 19.1vh;
+        height: 46vh;
     }
     .contact_container{
         padding: 10px;
